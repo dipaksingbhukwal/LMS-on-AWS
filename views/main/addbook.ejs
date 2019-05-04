@@ -1,0 +1,20 @@
+<% layout('layout') -%>
+<div class="container" id="addbook">
+    <h2 class="text-center">Add new book</h2>
+    <form class="form" method="POST" action="/addbook">
+        <h2>Enter book details</h2>
+        <p type="Category:"></p>
+        <select name="category">
+                <% for(var i = 0; i < categories.length; i++){ %>               
+                        <option value="<%= categories[i]._id%>"><%= categories[i].name %></option>                                
+                <% } %>
+        </select>
+        
+        <p type="Name:"><input name="name" placeholder="Write book name here.."></input></p>
+        <p type="Price:"><input name="description" placeholder="Write the price"></input></p>
+        <p type="Image Url:"><input name="image" placeholder="Url link to image"></input></p>
+        <button type="submit" class="btn btn-primary ">Add Book</button>
+
+      </form>
+  </div>
+</div>

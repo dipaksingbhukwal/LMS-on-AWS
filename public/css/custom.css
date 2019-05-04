@@ -1,0 +1,146 @@
+body {
+  padding-top: 100px;
+}
+#footerNavbar {
+  background: rgb(35, 33, 65);
+  color: white;
+}
+
+/* #navbar-gap {
+  margin-top: -4%;
+} */
+#navbar {
+  color: white !important;
+  background: rgb(35, 33, 65);
+}
+
+#navbar ul,
+li {
+  font-size: 20px;
+}
+
+.product-image {
+  width: 100%;
+}
+
+/* CSS for Credit Card Payment form */
+.credit-card-box .panel-title {
+  display: inline;
+  font-weight: bold;
+}
+.credit-card-box .form-control.error {
+  border-color: red;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+}
+.credit-card-box label.error {
+  font-weight: bold;
+  color: red;
+  padding: 2px 8px;
+  margin-top: 2px;
+}
+.credit-card-box .payment-errors {
+  font-weight: bold;
+  color: red;
+  padding: 2px 8px;
+  margin-top: 2px;
+}
+.credit-card-box label {
+  display: block;
+}
+/* The old "center div vertically" hack */
+.credit-card-box .display-table {
+  display: table;
+}
+.credit-card-box .display-tr {
+  display: table-row;
+}
+.credit-card-box .display-td {
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%;
+}
+/* Just looks nicer */
+.credit-card-box .panel-heading img {
+  min-width: 180px;
+}
+
+.status {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+#addbook form {
+  width: 380px;
+  /* height: 600px; */
+  background: #e6e6e6;
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px #000;
+  margin: calc(50vh - 220px) auto;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+#addbook h2 {
+  margin: 10px 0;
+  padding-bottom: 10px;
+
+  color: #78788c;
+  border-bottom: 3px solid #78788c;
+}
+#addbook input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s;
+  border-bottom: 2px solid #bebed2;
+}
+#addbook input:focus {
+  border-bottom: 2px solid #78788c;
+}
+#addbook p:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: #5a5a5a;
+}
+#addbook button {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #78788c;
+  background: 0;
+  color: #5a5a6e;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#addbook button:hover {
+  background: #78788c;
+  color: #fff;
+}
+#addbook div {
+  content: "Hi";
+  position: absolute;
+  bottom: -15px;
+  right: -20px;
+  background: #50505a;
+  color: #fff;
+  width: 320px;
+  padding: 16px 4px 16px 0;
+  border-radius: 6px;
+  font-size: 13px;
+  box-shadow: 10px 10px 40px -14px #000;
+}
+#addbook span {
+  margin: 0 5px 0 15px;
+}

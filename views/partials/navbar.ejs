@@ -1,0 +1,87 @@
+<nav class="navbar navbar-fixed-top" id="navbar">
+  <div class="container">
+    <div class="row">
+      <ul class="nav navbar-nav navbar-left">
+        <li>
+          <a href="/" style=" font-size: 24px;">
+            <i class="glyphicon glyphicon-home"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            class="dropdown-toggle"
+            data-toggle="dropdown"
+            href="#"
+            style=" font-size: 24px;"
+          >
+            <i class="glyphicon glyphicon-th"></i>
+            Category
+          </a>
+          <ul class="dropdown-menu">
+            <% for(var i = 0; i < categories.length; i++){ %>
+            <li>
+              <a href="/products/<%= categories[i]._id%>">
+                <%= categories[i].name %>
+              </a>
+            </li>
+            <li role="separator" class="divider"></li>
+            <% } %>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <form class="navbar-form navbar-left" method="post" action="/search">
+            <div class="form-group">
+              <input
+                type="text"
+                name="q"
+                class="form-control"
+                placeholder="Search..."
+              />
+
+              <button type="submit" class="btn btn-primary ">
+                <i class="glyphicon glyphicon-search"></i>
+              </button>
+            </div>
+          </form>
+        </li>
+
+        <% if(!user) {%>
+        <li>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+            >Signup / Login</a
+          >
+          <ul class="dropdown-menu">
+            <li><a href="/signup">Signup</a></li>
+            <li><a href="/login">Login</a></li>
+          </ul>
+        </li>
+        <% } else {%>
+        <li>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+            ><%= user.profile.name %></a
+          >
+          <ul class="dropdown-menu">
+            <li><a href="/profile">Profile</a></li>
+            <li><a href="/logout">Logout</a></li>
+          </ul>
+        </li>
+        <% } %> <% if(user) {%>
+        <li>
+          <a href="/cart" class="glyphicon glyphicon-shopping-cart"
+            ><span class="badge"><%= cart%></span></a
+          >
+        </li>
+        <% } else {%>
+        <li>
+          <a href="/cart" class="glyphicon glyphicon-shopping-cart"
+            ><span class="badge">0</span></a
+          >
+        </li>
+        <% } %>
+      </ul>
+    </div>
+  </div>
+</nav>
