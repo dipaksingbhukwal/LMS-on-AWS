@@ -23,6 +23,21 @@ li {
   width: 100%;
 }
 
+.panel-default {
+  border-radius: 23px;
+  padding-bottom: 20px;
+  background: rgb(35, 33, 65);
+  color: white;
+}
+
+#profile-box {
+  background: rgb(210, 210, 221);
+  border-style: double;
+  border-color: rgb(35, 33, 65);
+  border-radius: 15px;
+  padding: 20px;
+}
+
 /* CSS for Credit Card Payment form */
 .credit-card-box .panel-title {
   display: inline;

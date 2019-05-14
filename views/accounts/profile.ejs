@@ -1,7 +1,7 @@
 <% layout('layout') -%>
 <div class="container border">
   <div class="row">
-    <div class="col-sm-6 col-md-4">
+    <div class="col-sm-6 col-md-2" id="profile-box">
       <img
         class="img-circle img-responsive img-center"
         src="<%= user.profile.picture %>"
@@ -27,6 +27,7 @@
 
       <a href="/edit-profile" class="btn btn-primary btn-lg">Edit Profile</a>
     </div>
+    <div class="col-md-2"></div>
     <div class="col-md-8">
       <h2 class="text-center">Book issued</h2>
 
